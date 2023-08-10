@@ -1,1 +1,3 @@
-export default function menu();
+export default function menu() {
+    
+}
