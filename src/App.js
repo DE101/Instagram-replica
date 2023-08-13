@@ -1,6 +1,7 @@
 import './App.css';
 import Logo from './LogoE';
 import Menu from './Menu';
+import Post from './Post'
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
           <Menu text="Profile" icon="account_circle"></Menu>
         </div>
       </div>
-      <div className="main-content"></div>
+      <div className="main-content">
+        <Post></Post>
+      </div>
       <div className="right-side-bar"></div>
     </div>
   );
