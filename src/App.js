@@ -23,6 +23,15 @@ function App() {
       avatar: "https://i.imagesup.co/images2/42736a080ed7a88afcf537cb6309cbe3d037e878.jpg"
     }
   ]
+  const Posts = [
+    {
+      postMediaLink: "https://th.bing.com/th/id/R.8486fc5ea4e6586190a49a4d91170ea8?rik=kISlrokwfE3CRg&pid=ImgRaw&r=0",
+      postMeta: "Ice cream joy",
+      avatar: "https://th.bing.com/th/id/OIP.onvo20gh0-YyVWDiLcICowHaHa?pid=ImgDet&w=512&h=512&rs=1",
+      name:"John Doe",
+      bio:"🥹 I am a fun teacher!"
+    }
+  ]
   return (
     <div className="container">
       <div className="side-bar">
@@ -39,7 +48,15 @@ function App() {
         </div>
       </div>
       <div className="main-content">
-        <Post></Post>
+        {
+          Posts.map(()=>{
+            return (
+              <Post>
+                
+              </Post>
+            )
+          })
+        }
       </div>
       <div className="right-side-bar">
         {

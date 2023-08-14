@@ -1,16 +1,18 @@
 import "./App.css";
+
 export default function PostHeader({avatar, name, bio}) {
   return (
     <div class="header">
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/men/26.jpg" alt="" />
+        <img src={avatar} alt="" />
         <div class="title">
-          <p class="text-bold">John Doe</p>
-          <p class="text">🥹 I am a fun teacher!</p>
+          <p class="text-bold">{name}</p>
+          <p class="text">{bio}</p>
         </div>
       </div>
-      <div class="button">
-        <span class="material-symbols-outlined"> more_horiz </span>
+      <div class="footer">
+        <span class="material-symbols-outlined"> heart_check </span>
+        <span class="material-symbols-outlined"> send </span>
       </div>
     </div>
   );

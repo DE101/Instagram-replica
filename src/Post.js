@@ -1,13 +1,17 @@
 import "./App.css";
 import PostHeader from "./PostHeader";
-export default function Post() {
+import PostMedia from "./PostMedia";
+
+
+
+export default function Post({postMediaLink, postMeta, avatar, name, bio}) {
   return (
     <div className="card">
-      <PostHeader></PostHeader>
-      
-      <div class="footer">
-        <span class="material-symbols-outlined"> heart_check </span>
-        <span class="material-symbols-outlined"> send </span>
+      <PostHeader avatar={avatar} name={name} bio={bio}></PostHeader>
+      <PostMedia postMediaLink={postMediaLink} postMeta={postMeta}></PostMedia>
+
+      <div class="button">
+        <span class="material-symbols-outlined"> more_horiz </span>
       </div>
       <div class="card">
         <div class="header">
