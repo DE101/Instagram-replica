@@ -49,10 +49,9 @@ function App() {
       </div>
       <div className="main-content">
         {
-          Posts.map(()=>{
+          Posts.map((post, i)=>{
             return (
-              <Post>
-                {Post}
+              <Post post={post} key={i}>
               </Post>
             )
           })
@@ -60,11 +59,12 @@ function App() {
       </div>
       <div className="right-side-bar">
         {
-          followersList.map((follower)=>{
+          followersList.map((follower, i)=>{
             return (
               <FollowBack
                 avatar={follower.avatar}
                 name={follower.name}
+                key={i}
                 ></FollowBack>
             )
           })
