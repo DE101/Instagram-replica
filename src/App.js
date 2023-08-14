@@ -1,9 +1,28 @@
 import './App.css';
 import Logo from './LogoE';
 import Menu from './Menu';
-import Post from './Post'
+import Post from './Post';
+import FollowBack from './FollowBack';
 
 function App() {
+  const followersList = [
+    {
+      name: "Kaiser",
+      avatar: "https://orig00.deviantart.net/8384/f/2007/302/0/9/random_head_profile_by_kurvos.png"
+    },
+    {
+      name: "Sheeran",
+      avatar: "https://i.imagesup.co/images2/42736a080ed7a88afcf537cb6309cbe3d037e878.jpg"
+    },
+    {
+      name: "Kaiser",
+      avatar: "https://orig00.deviantart.net/8384/f/2007/302/0/9/random_head_profile_by_kurvos.png"
+    },
+    {
+      name: "Sheeran",
+      avatar: "https://i.imagesup.co/images2/42736a080ed7a88afcf537cb6309cbe3d037e878.jpg"
+    }
+  ]
   return (
     <div className="container">
       <div className="side-bar">
@@ -22,7 +41,20 @@ function App() {
       <div className="main-content">
         <Post></Post>
       </div>
-      <div className="right-side-bar"></div>
+      <div className="right-side-bar">
+        {
+          followersList.map((follower)=>{
+            return (
+              <FollowBack
+                avatar={follower.avatar}
+                name={follower.name}
+                ></FollowBack>
+            )
+          })
+        }
+        {/* <FollowBack avatar="https://orig00.deviantart.net/8384/f/2007/302/0/9/random_head_profile_by_kurvos.png" name="Kaiser"></FollowBack>
+        <FollowBack avatar="https://i.imagesup.co/images2/42736a080ed7a88afcf537cb6309cbe3d037e878.jpg" name="Sheeran"></FollowBack> */}
+      </div>
     </div>
   );
 }
