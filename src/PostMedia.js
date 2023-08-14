@@ -1,8 +1,10 @@
-export default function PostMedia({postMedia, postMeta}) {
+import "./App.css";
+
+export default function PostMedia({postMediaLink, postMeta}) {
     return (
         <div class="post">
         <img
-          src={postMedia}
+          src={postMediaLink}
           alt={postMeta}
         />
       </div>
