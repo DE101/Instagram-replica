@@ -52,7 +52,7 @@ function App() {
           Posts.map(()=>{
             return (
               <Post>
-                
+                {Post}
               </Post>
             )
           })

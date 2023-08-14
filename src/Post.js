@@ -4,11 +4,11 @@ import PostMedia from "./PostMedia";
 
 
 
-export default function Post({postMediaLink, postMeta, avatar, name, bio}) {
+export default function Post({post}) {
   return (
     <div className="card">
-      <PostHeader avatar={avatar} name={name} bio={bio}></PostHeader>
-      <PostMedia postMediaLink={postMediaLink} postMeta={postMeta}></PostMedia>
+      <PostHeader avatar={post.avatar} name={post.name} bio={post.bio}></PostHeader>
+      <PostMedia postMediaLink={post.postMediaLink} postMeta={post.postMeta}></PostMedia>
 
       <div class="button">
         <span class="material-symbols-outlined"> more_horiz </span>
