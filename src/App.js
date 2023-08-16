@@ -59,7 +59,7 @@ function App() {
       </div>
       <div className="right-side-bar">
         {
-          followersList.map((follower, i)=>{
+          followersList.map((follower, i )=>{
             return (
               <FollowBack
                 avatar={follower.avatar}
