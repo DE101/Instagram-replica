@@ -3,6 +3,7 @@ import Logo from './LogoE';
 import Menu from './Menu';
 import Post from './Post';
 import FollowBack from './FollowBack';
+import { Route,Routes } from 'react-router-dom';
 
 function App() {
   const followersList = [
@@ -45,6 +46,11 @@ function App() {
           <Menu text="Notifications" icon="favorite"></Menu>
           <Menu text="Create" icon="add_box"></Menu>
           <Menu text="Profile" icon="account_circle"></Menu>
+        </div>
+        <div>
+          <Routes>
+            <Route></Route>
+          </Routes>
         </div>
       </div>
       <div className="main-content">
