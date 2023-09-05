@@ -50,6 +50,7 @@ function App() {
         <div>
           <Routes>
             <Route></Route>
+            <Route></Route>
           </Routes>
         </div>
       </div>
